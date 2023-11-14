@@ -1,0 +1,27 @@
+//=====================================================//
+//=================== desktop style ===================//
+//=====================================================//
+
+@media screen and (min-width: 1000px) {
+
+  .element-heading-title{
+    background-color: rgba(12,44,120,1);
+    color: white;
+  }
+
+  .element-heading-title .container{
+    height:28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // padding: 0 64px;
+  }
+
+  .element-heading-title .container .informations p{
+    color:rgb(193, 193, 193);
+    font-family: Raleway, Arial, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}

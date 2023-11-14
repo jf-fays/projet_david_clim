@@ -1,0 +1,23 @@
+.footer-partners {
+  // height: 215px;
+  padding: 50px 20px 50px 20px;
+  background-color: rgba( 231, 237, 245, 100%);
+  // position: absolute;
+  width: 100%;
+}
+
+.footer-partners ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.footer-partners img {
+  height: auto;
+  width: 120px;
+  margin: 0px 24px;
+}

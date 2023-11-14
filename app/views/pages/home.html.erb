@@ -1,2 +1,91 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+    <%# <%= image_tag "salon-clim.jpg" %>
+</div>
+
+<div class="title-homepage">
+    <h2>DAVID CLIM : Spécialiste de la Climatisation dans la Région de Fréjus et Saint-Raphaël</h2>
+    <p>Découvrez <strong>David Clim</strong>, votre expert en climatisation à Fréjus / Saint-Raphaël et ses environs. Notre équipe est composée de <strong>frigoristes qualifiés et diplômés d'État</strong>, prêts à répondre aux besoins des particuliers et des professionnels. Que ce soit pour <strong>l'installation, la maintenance, le nettoyage ou le dépannage</strong> de votre système de climatisation, David Clim est là pour vous servir, offrant des solutions fiables et efficaces.</p>
+    <%# <p><strong>David Clim</strong> est une entreprise spécialisée dans la climatisation. Notre équipe de <strong>frigoristes diplômés d’État</strong> intervient auprès des particuliers comme des professionnels basés sur Fréjus / Saint-Raphaël et ses alentours. Qu’il s’agisse de <strong>l’installation, de la maintenance, du nettoyage ou du dépannage de votre climatisation</strong>, David Clim est apte à intervenir chez vous.</p> %>
+</div>
+
+<div class="card-homepage">
+    <div class="box_one">
+        <div class="card_one">
+            <div class="img-homepage">
+                <%= image_tag "snowflake-white.png" %>
+            </div>
+            <div class="text-homepage">
+                <p>Notre équipe est réactive et effectue un travail particulièrement minutieux. Notre engagement envers un rapport qualité/prix avantageux garantit une satisfaction client inégalée.</p>
+                <p>Vous vous demandez probablement ce qui nous distingue de nos concurrents ? Notre métier consiste à vous fournir des conseils personnalisés et à vous accompagner dans toutes les étapes de votre projet.</p>
+                <%# <p>Vous vous demandez sûrement ce qui nous différencie de nos concurrents ? C’est notre métier de vous conseiller, de vous accompagner dans l’élaboration de votre projet, en venant vous rendre visite gratuitement.</p> %>
+            </div>
+        </div>
+        <div class="card_two">
+            <%= image_tag "air-conditioner-1.png" %>
+        </div>
+        <div class="card_three">
+            <%= image_tag "air-conditioner-2.png" %>
+        </div>
+        <div class="card_four">
+            <div class="img-homepage">
+                <%= image_tag "air-conditioner-white.png" %>
+            </div>
+            <div class="text-homepage">
+                <p>Lors de cette première rencontre, nous établissont une étude sur la concrétisation de votre projet de climatisation. Ainsi, vous restez maître de vos envies, tout en ayant une analyse climatique professionnelle sur laquelle vous appuyer.</p>
+                <p>De cette manière, nous garantissons un environnement à faible consommation d'énergie grâce à DAVID CLIM, pour une atmosphère intérieure idéale !</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-quality">
+    <div class="text-quality">
+        <h2>La qualité David Clim</h2>
+    </div>
+    <div class="container medal">
+        <div class="location">
+            <%= image_tag "medal-location.png" %>
+            <p>Proche de chez vous</p>
+        </div>
+        <div class="estimation">
+            <%= image_tag "medal-estimation.png" %>
+            <p>Devis gratuit</p>
+        </div>
+        <div class="car">
+            <%= image_tag "medal-car.png" %>
+            <p>Prêt à intervenir</p>
+        </div>
+        <div class="warranty">
+            <%= image_tag "medal-warranty.png" %>
+            <p>Assurance décennale</p>
+        </div>
+        <div class="sav">
+            <%= image_tag "medal-sav.png" %>
+            <p>Un S.A.V. rapide</p>
+        </div>
+        <div class="maintenance">
+            <%= image_tag "medal-maintenance.png" %>
+            <p>Un service dédié à l'entretien et au dépannage</p>
+        </div>
+    </div>
+</div>
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.3250171319096!2d6.731809203459973!3d43.432927492406215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cebd4e5b347a01%3A0x78f59d48472caffe!2sPlace%20Camille%20Formig%C3%A9%2C%2083600%20Fr%C3%A9jus!5e0!3m2!1sfr!2sfr!4v1690479450216!5m2!1sfr!2sfr" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <%# <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cTlbvOA32850mI4Ke42Avg_1lMqCYWE&ehbc=2E312F" width="100%" height="480"></iframe> %>
+</div>
+
+<div class="footer-partners" >
+    <div class="brands-list">
+        <ul>
+            <li><%= image_tag "hitachi-logo2.png" %></li>
+            <li><%= image_tag "daikin-logo.png" %></li>
+            <li><%= image_tag "mitsubishi-logo.png" %></li>
+            <li><%= image_tag "toshiba-logo.png" %></li>
+            <li><%= image_tag "airzone-logo.png" %></li>
+            <li><%= image_tag "manipulateur_de_liquides_fluorigenes.png" %></li>
+            <li><%= image_tag "tetris-assurance.png" %></li>
+        </ul>
+    </div>
+</div>
+
+<%= render 'shared/btn_footer_contact' %>

@@ -1,12 +1,97 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
+//=====================================================//
+//=================== desktop style ===================//
+//=====================================================//
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+@media screen and (min-width: 1000px) {
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+  .navbar-lewagon {
+    justify-content: space-between;
+    background: white;
+    padding: 0;
+  }
+
+  .navbar-lewagon .container-fluid {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .navbar-lewagon .navbar-brand img {
+    height: 68px;
+    margin: 8px 8px 8px 16px;
+  }
+
+  .navbar-lewagon .info-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 64px;
+  }
+
+  .navbar-lewagon .info-contact .info{
+    display: flex;
+  }
+
+  .navbar-lewagon .info-contact .phone-number {
+    margin: auto 16px;
+  }
+
+  .navbar-lewagon .info-contact .phone-number > p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 26px;
+    // color: rgba( 92, 153, 213, 100%);
+    // color: rgba( 69, 155, 218, 100%);
+    color: rgba( 37, 118, 205, 100%);
+  }
+
+  .navbar-lewagon .info-contact .quotes{
+    padding: 7px 14px;
+    background: #dd2935;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 24px;
+    text-align: center;
+    margin: auto 16px;
+    font-family: Montserrat;
+  }
+
+  .navbar-lewagon .info-contact .quotes a{
+    color: white;
+  }
+
+  .navbar-lewagon .navbar-collapse{
+    width: 100%;
+    height: 68px;
+    // background-color: rgba( 69, 155, 218, 100%);
+    background-color: rgba( 37, 118, 205, 100%);
+    // 0px 5px 20px 0px rgba(0,0,0,0.2)
+    text-align: center;
+    box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-lewagon .navbar-collapse .navbar-nav{
+    margin: auto;
+    align-items: center;
+  }
+
+  .navbar-lewagon .navbar-collapse .navbar-nav a{
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    padding: 8px 48px;
+  }
+
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid rgb(215, 218, 220);
+  }
+
+  .stuck{
+    position:fixed;
+    z-index:100;
+    width:100%;
+    top:0;
+  }
 }
