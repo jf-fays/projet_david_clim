@@ -1,0 +1,93 @@
+<div class="contact" id="contact">
+    <div class="contact-banner">
+        <div class="contact-banner-text">
+            <h2>DAVID CLIM À FRÉJUS</h2>
+            <h2>NOUS SOMMES À VOTRE ÉCOUTE</h2>
+        </div>
+        <div class="contact-banner-text-line">
+            <p>_______</p>
+        </div>
+        <%# <div class="contact-banner-text required-field-text">
+            <p><em>Tous les champs sont obligatoires</em></p>
+        </div> %>
+    </div>
+    <div class="contact-background">
+    </div>
+      <div class="contact-element">
+        <div class="contact-text">
+            <%# <div class="contact-text-description"> %>
+                <h4>CONTACT &</h4>
+                <h2>Infos pratiques</h2>
+                <%# <p>Que vous soyez un <strong>particulier</strong> ou une <strong>entreprise</strong>, si vous avez un projet en tête (qu'il s'agisse d'une étude, d'un devis, d'une prise de rendez-vous, ou autre), l'équipe de David Clim est là pour vous accompagner. <br>Nous sommes votre partenaire de confiance pour tous vos besoins en <strong>climatisation</strong>, que ce soit pour <strong>l'installation, le dépannage, la maintenance, ou même le nettoyage</strong>, dans la région de Fréjus / Saint-Raphaël et ses environs.</p> %>
+                <%# <p>Notre priorité est de vous offrir un <strong>confort thermique optimal</strong> ainsi que des solutions qui favorisent <strong>l'économie d'énergie</strong>.</p> %>
+                <p>Vous êtes un <strong>particulier</strong> ou une <strong>entreprise</strong> et vous souhaitez <strong>échanger sur votre projet</strong> (étude, devis, RDV, ou autre…)?</p>
+                <p>David Clim vous accompagne pour tous vos projets de climatisation d'<strong>installation</strong>, de <strong>dépannage</strong>, de <strong>maintenance</strong> ou encore de <strong>nettoyage</strong> dans la région de Fréjus / Saint-Raphaël et ses environs.</p>
+                <p>Merci de compléter ce formulaire afin que nous puissions répondre avec précision à votre demande et vous recontacter dès prise de connaissance de ces informations.</p>
+            <%# </div> %>
+            <%# <div class="contact-text-information"> %>
+                <p><strong>Vous pouvez aussi nous contacter par téléphone ou par e-mail:</strong></p>
+                <p><i class="fa-solid fa-phone" style="color: #2576ce;"></i><span style="padding-left: 14px;">06 11 96 44 86</span></p>
+                <p><i class="fa-solid fa-envelope" style="color: #2576ce;"></i><span style="padding-left: 14px;">contact@davidclim.fr</span></p>
+            <%# </div> %>
+        </div>
+        <div class="contact-form">
+            <%= simple_form_for @contact do |form| %>
+
+                <% if @contact.errors.any? %>
+                    <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
+                        <div class="font-bold text-rose-700 text-sm pb-4"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
+
+                        <ul class="pb-0 mb-0">
+                            <% @contact.errors.each do |error| %>
+                                <li class="text-rose-600 pl-4 text-sm"><%= error.full_message %></li>
+                            <% end %>
+                        </ul>
+                    </div>
+                <% end %>
+
+
+                <div class="field">
+                    <div class="field_contact1">
+                      <div class="field_last_name">
+                        <%# <%= form.label :"Nom *" %>
+                        <%= form.text_field :last_name, placeholder: 'Nom' %>
+                      </div>
+
+                      <div class="field_email">
+                          <%# <%= form.label :"email *" %>
+                          <%= form.email_field :email, placeholder: 'Adresse e-mail'%>
+                      </div>
+                    </div>
+
+                    <div class="field_contact2">
+                      <div class="field_phone_number">
+                          <%# <%= form.label :"Téléphone *" %>
+                          <%= form.text_field :phone_number, placeholder: 'N° de téléphone' %>
+                      </div>
+
+                      <div class="field_city">
+                          <%# <%= form.label :"Ville *" %>
+                          <%= form.text_field :city, placeholder: 'Ville' %>
+                      </div>
+                    </div>
+
+                    <div class="field_content" >
+                        <%# <%= form.label :"Rédigez votre message ici *" %>
+                        <%= form.text_area :message, placeholder: 'Rédigez votre message ici', rows: "6" %>
+                    </div>
+
+                    <div class="hidden d-none">
+                        <%= form.label :nickname %>
+                        <%= form.text_field :nickname %>
+                    </div>
+
+                    <div class="actions flex justify-end">
+                        <p><em>Tous les champs sont obligatoires.</em></p>
+                        <%=form.submit "Envoyer  → ", class: "btn-contact" %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+      </div>
+
+</div>
