@@ -1,0 +1,63 @@
+.maintenance-banner{
+  // margin-top: 90px;
+  // color: rgba( 24, 55, 59, 100%);
+  background: radial-gradient(circle at top, #ffffff , #F3F5F6);
+  // margin-top: 0px;
+  // border-top-width: 90px;
+  padding-bottom: 90px;
+  padding-top: 90px;
+}
+
+.cleaning-box{
+  padding: 20px 0px;
+  // background-color: black;
+  // background-color: rgba( 221, 207, 199, 100%);
+  background-image: url(background_gradient_blue1.jpg);
+  background-size: cover;
+}
+
+.cleaning-section {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(nettoyage-clim-haute-pression.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  width: 60%;
+  left: 40%;
+
+  .container {
+    // width: fit-content;
+    // text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translate(-50%,-50%);
+  }
+
+  .text-cleaning {
+    width: 65%;
+  }
+}
+
+.cleaning-section .text-cleaning h1 {
+  font-size: 20px;
+  color: white;
+  // opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.cleaning-section .text-cleaning span {
+  color: rgba( 240, 188, 69, 100%);
+}
+
+.cleaning-section .text-cleaning p {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  line-height: 1.7rem;
+  padding-top: 20px;
+  // font-size: 32px;
+  // font-weight: bold;
+}

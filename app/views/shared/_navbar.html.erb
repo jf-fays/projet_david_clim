@@ -1,0 +1,47 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container-fluid">
+        <div class="info-contact">
+            <%= link_to root_path, class: "navbar-brand" do %>
+            <%= image_tag "logo_name.png" %>
+            <% end %>
+            <div class="info">
+                <div class="phone-number">
+                    <p>06 11 96 44 86</p>
+                </div>
+                <div class="quotes">
+                    <%= link_to "Demandez un devis", new_contact_path, class: "nav-link" %>
+                </div>
+            </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <%= link_to "Accueil", root_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item active">
+                    <%= link_to "Installation", installation_climatisation_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Maintenance <br /> & Nettoyage".html_safe, maintenance_nettoyage_climatisation_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Dépannage".html_safe, depannage_climatisation_path, class: "nav-link" %>
+                </li>
+                <%# <li class="nav-item">
+                    <%= link_to "Climatisation réversible <br />/ Pompe à chaleur".html_safe, climatisation_reversible_pompe_a_chaleur_path, class: "nav-link" %>
+                <%# </li> %>
+                <li class="nav-item">
+                    <%= link_to "Réalisations", realisation_climatisation_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Contact", new_contact_path, class: "nav-link" %>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

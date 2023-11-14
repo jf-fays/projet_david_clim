@@ -1,1 +1,117 @@
 // Specific CSS for your home-page
+//=====================================================//
+//=================== tablet style ===================//
+//=====================================================//
+
+@media screen and (min-width: 750px) {
+  .banner{
+  //   background-image: url(salon-clim.jpg);
+  //   height: 600px;
+  //     background-position: center;
+  //     opacity: 0.7;
+  //     background-size: cover;
+  //     // background-attachment: fixed;
+  //     justify-content: center;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     // align-items: center;
+      position: relative;
+      height: 600px;
+      // width: 100%;
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+  }
+
+  .banner::before {
+    content: "";
+    background-image: url(salon-clim.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.85;
+  }
+
+  // .banner img {
+  //   position: relative;
+  //   height: 80px;
+  //   margin: 28px 48px;
+  // }
+
+  .title-homepage {
+    background-color: white;
+    padding: 96px 140px;
+  }
+
+  .title-homepage h2 {
+    margin: 0;
+    padding: 0 0 32px 32px;
+    color: rgba( 69, 155, 218, 100%);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    border-left: 3px solid #459bda;
+  }
+
+  .title-homepage p {
+    margin: 0;
+    // color: rgba( 104, 104, 104, 100%);
+    color: rgba( 24, 55, 59, 100%);
+    border-left: 3px solid #459bda;
+    padding-left: 32px;
+  }
+
+  .block-quality {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    // position: absolute;
+    width: 100%;
+    padding: 12px 0px;
+  }
+
+  .text-quality{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+
+  .text-quality h2 {
+    color: #dd2935;
+    font-weight: bold;
+  }
+
+  .medal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+  }
+
+  .medal img{
+    height: 120px;
+    width: 120px;
+  }
+
+  .medal p {
+    color: rgba( 104, 104, 104, 100%);
+  }
+
+  .block-quality .medal .location, .estimation, .car, .warranty, .maintenance, .sav {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    flex-direction:column;
+    height: 250px;
+    width: 150px;
+  }
+}
