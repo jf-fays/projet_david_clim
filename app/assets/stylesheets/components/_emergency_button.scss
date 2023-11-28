@@ -1,0 +1,20 @@
+.emergency{
+  padding: 12px 40px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  border: solid 3px #dd2935;
+  transition: transform .4s;
+  display: inline-block;
+  color: #dd2935;
+  text-decoration: none;
+  display: block;
+
+  &:hover{
+    transform: scale(1.2);
+    background-color: #dd2935;
+    display: block;
+    color: white;
+  }
+}

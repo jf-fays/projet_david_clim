@@ -2,6 +2,12 @@
   outline: none;
   font-family: Montserrat;
   // font-family: Poppins, sans-serif;
+  // scroll-behavior: auto;
+  // overflow-anchor: none !important;
+}
+
+html {
+  scroll-behavior: auto;
 }
 
 body{

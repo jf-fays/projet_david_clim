@@ -54,10 +54,13 @@
     text-align: center;
     margin: auto 16px;
     font-family: Montserrat;
-  }
-
-  .navbar-lewagon .info-contact .quotes a{
     color: white;
+    text-decoration: none;
+
+    &:hover{
+      // background: rgb(147, 25, 33);
+      background: linear-gradient(to right, #931921, #dd2935);
+    }
   }
 
   .navbar-lewagon .navbar-collapse{
@@ -73,20 +76,38 @@
   }
 
   .navbar-lewagon .navbar-collapse .navbar-nav{
-    margin: auto;
+    margin: 0px auto;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar-lewagon .navbar-collapse .navbar-nav li{
+    height: 100%;
+    display: flex;
     align-items: center;
   }
 
   .navbar-lewagon .navbar-collapse .navbar-nav a{
+    display: flex;
+    align-items: center;
     color: white;
     font-family: Montserrat;
     font-weight: 500;
     padding: 8px 48px;
+    height: 100%;
+    border-bottom: solid 5px rgba( 37, 118, 205, 100%);
   }
 
   .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
     border-right: 1px solid rgb(215, 218, 220);
   }
+
+  .navbar-lewagon .navbar-collapse .navbar-nav a.active-link {
+  //  background-color: rgba( 240, 188, 69, 100%);
+  box-sizing: border-box;
+  border-bottom: solid 5px rgba( 240, 188, 69, 100%);
+  }
+
 
   .stuck{
     position:fixed;
