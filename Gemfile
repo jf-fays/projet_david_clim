@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'jquery-rails'
 gem 'mail_form', '~> 1.9'
+gem 'yarn'
+
 
 ruby "3.1.2"
 
@@ -22,7 +24,8 @@ gem "puma", "~> 5.0"
 gem "importmap-rails"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
-gem "jsbundling-rails"
+gem 'jsbundling-rails', '>= 1.2.1'
+
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
