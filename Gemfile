@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'jquery-rails'
 gem 'mail_form', '~> 1.9'
 gem 'yarn'
+gem 'optimist', '~> 3.0'
+
 
 
 ruby "3.1.2"

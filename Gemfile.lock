@@ -161,6 +161,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
+    optimist (3.1.0)
     parslet (2.0.0)
     pg (1.5.4)
     popper_js (2.11.8)
@@ -280,6 +281,7 @@ DEPENDENCIES
   jquery-rails
   jsbundling-rails (>= 1.2.1)
   mail_form (~> 1.9)
+  optimist (~> 3.0)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
