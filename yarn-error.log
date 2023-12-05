@@ -1,0 +1,48 @@
+Arguments: 
+  /Users/jeff/.nvm/versions/node/v16.15.1/bin/node /Users/jeff/.nvm/versions/node/v16.15.1/bin/yarn install
+
+PATH: 
+  ./bin:./node_modules/.bin:/Users/jeff/.nvm/versions/node/v16.15.1/bin:/Users/jeff/.rbenv/shims:/Users/jeff/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jeff/.pyenv/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/jeff/.rbenv/bin:/usr/local/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/jeff/code/jf-fays/projet_david_clim/package.json: Unexpected token / in JSON at position 64
+      at JSON.parse (<anonymous>)
+      at /Users/jeff/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/jeff/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/jeff/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "app",
+    "private": "true",
+    "dependencies": {
+      // "@hotwired/stimulus": "^3.2.1",
+      "@hotwired/stimulus-loading": "https://github.com/hotwired/stimulus-loading",
+      "@hotwired/turbo-rails": "^7.3.0",
+      "@popperjs/core": "^2.11.7",
+      "bootstrap": "^5.2.3",
+      "jquery": "^3.7.1",
+      "stimulus": "^3.2.2",
+      "webpack": "^5.82.1",
+      "webpack-cli": "^5.1.1"
+    },
+    "scripts": {
+      "build": "webpack --config webpack.config.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
