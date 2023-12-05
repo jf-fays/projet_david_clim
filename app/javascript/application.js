@@ -25,8 +25,8 @@
 
 // document.addEventListener("turbo:before-cache", cleanupCarouselBeforeCache);
 import "@hotwired/turbo-rails"
-// import "./controllers"
-import "controllers"
+import "./controllers"
+// import "controllers"
 import "@popperjs/core"
 import "bootstrap"
 
